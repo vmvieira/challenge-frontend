@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots PostCard The Post Card 1`] = `
+<div>
+  <div
+    className="sc-gsTCUz hDOZUO"
+  />
+</div>
+`;
+
+exports[`Storyshots Searchbar The Searchbar 1`] = `
+<div
+  className="sc-iBPRYJ dtvRRt"
+>
+  <div
+    className="searchPositioning"
+  >
+    <label
+      htmlFor="searchbar"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": "#828282",
+          }
+        }
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clipRule="evenodd"
+          d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+          fillRule="evenodd"
+        />
+        <path
+          clipRule="evenodd"
+          d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </label>
+    <input
+      id="searchbar"
+      placeholder="Search"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Sidebar The Sidebar 1`] = `
+<div
+  className="sc-crrsfI LthUs"
+>
+  <div
+    className="sc-pFZIQ kqwzpv community-section"
+  >
+    <div
+      className="title"
+    >
+      <span
+        className="pointer"
+      >
+        Today's Top Growing Communities
+      </span>
+    </div>
+    <div
+      className="sc-jrAGrp dWkwXJ communities-wrapper"
+    >
+      <div
+        className="community pointer"
+      >
+        <span>
+          1
+        </span>
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 14l5-5 5 5z"
+          />
+        </svg>
+        <img
+          alt="some random lorem"
+          src="https://picsum.photos/id/6/32"
+        />
+        <span
+          className="name"
+        >
+          r/
+          wallstreetbets
+        </span>
+      </div>
+      <div
+        className="community pointer"
+      >
+        <span>
+          2
+        </span>
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 14l5-5 5 5z"
+          />
+        </svg>
+        <img
+          alt="some random lorem"
+          src="https://picsum.photos/id/48/32"
+        />
+        <span
+          className="name"
+        >
+          r/
+          politics
+        </span>
+      </div>
+      <div
+        className="community pointer"
+      >
+        <span>
+          3
+        </span>
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 14l5-5 5 5z"
+          />
+        </svg>
+        <img
+          alt="some random lorem"
+          src="https://picsum.photos/id/26/32"
+        />
+        <span
+          className="name"
+        >
+          r/
+          sports
+        </span>
+      </div>
+      <div
+        className="community pointer"
+      >
+        <span>
+          4
+        </span>
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 14l5-5 5 5z"
+          />
+        </svg>
+        <img
+          alt="some random lorem"
+          src="https://picsum.photos/id/35/32"
+        />
+        <span
+          className="name"
+        >
+          r/
+          pcmasterrace
+        </span>
+      </div>
+    </div>
+    <div
+      className="sc-kEjbxe bzHwCT"
+    >
+      <button
+        className="sc-fubCfw eMDVVv pointer"
+      >
+         
+        View All
+         
+      </button>
+    </div>
+    <div
+      className="sc-iqHYGH dfHEhp"
+    >
+      <button
+        className="sc-fubCfw eMDVVv pointer"
+      >
+         
+        Top
+         
+      </button>
+      <button
+        className="sc-fubCfw eMDVVv pointer"
+      >
+         
+        News
+         
+      </button>
+      <button
+        className="sc-fubCfw eMDVVv pointer"
+      >
+         
+        Sports
+         
+      </button>
+      <button
+        className="sc-fubCfw eMDVVv pointer"
+      >
+         
+        Near You
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
