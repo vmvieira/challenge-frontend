@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link as ReactRouterDomLink } from 'react-router-dom';
 import api from '../../API/api';
 import { PageLayout } from '../../components/PageLayout';
-import { Input } from '../../components/Input';
+import TextInput from '../../components/TextInput';
 import { Button } from '../../components/Button';
 import styled from 'styled-components';
 
@@ -22,8 +22,12 @@ const Form = styled.form`
     margin: 10px 0;
   }
 
-  > ${Input} {
-    margin-top: 20px;
+  label {
+    font-weight: bold;
+  }
+
+  div {
+    margin-top: 10px;
   }
 `;
 
@@ -87,7 +91,7 @@ function Signup(props) {
 
         <div>
           <label htmlFor='signupFormName'>Name</label>
-          <Input
+          <TextInput
             type='text'
             name='name'
             id='signupFormName'
@@ -100,7 +104,7 @@ function Signup(props) {
 
         <div>
           <label htmlFor='signupFormEmail'>E-mail Address</label>
-          <Input
+          <TextInput
             type='email'
             name='email'
             id='signupFormEmail'
@@ -113,7 +117,7 @@ function Signup(props) {
 
         <div>
           <label htmlFor='signupFormPassword'>Password</label>
-          <Input
+          <TextInput
             type='password'
             name='password'
             id='signupFormPassword'

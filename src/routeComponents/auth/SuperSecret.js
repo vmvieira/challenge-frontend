@@ -1,4 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const ResponsiveImg = styled.img`
+  max-width: 100%;
+  height: auto;
+`;
 
 function SuperSecret() {
   return (
@@ -9,11 +15,15 @@ function SuperSecret() {
         <a
           href='https://bolzat.github.io/Bolzat.github.io-StonksSimulator2021/'
           target='_blank'
+          rel='noreferrer'
         >
           TENDIES
         </a>
       </h2>
-      <img src='https://ih1.redbubble.net/image.379601685.6062/st,small,507x507-pad,600x600,f8f8f8.u7.jpg' />
+      <ResponsiveImg
+        src='https://ih1.redbubble.net/image.379601685.6062/st,small,507x507-pad,600x600,f8f8f8.u7.jpg'
+        alt='wallstreetbets logo'
+      />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Link as ReactRouterDomLink } from 'react-router-dom';
 import api from '../../API/api';
 import { PageLayout } from '../../components/PageLayout';
-import { Input } from '../../components/Input';
+import TextInput from '../../components/TextInput';
 import styled from 'styled-components';
 import { Button } from '../../components/Button';
 import { AuthContext } from '../../contexts/AuthContext';
@@ -23,8 +23,12 @@ const Form = styled.form`
     margin: 10px 0;
   }
 
-  > ${Input} {
-    margin-top: 20px;
+  label {
+    font-weight: bold;
+  }
+
+  div {
+    margin-top: 10px;
   }
 `;
 
@@ -56,7 +60,7 @@ const StyledLink = styled(Link)`
 function Login(props) {
   const authContext = useContext(AuthContext);
 
-  const [state, setState] = useState({ password: '', email: '' });
+  const [state, setState] = useState({ email: '', password: '' });
   const [errors, setErrors] = useState({
     email: null,
     password: null,
@@ -81,7 +85,7 @@ function Login(props) {
         'loggedInUser',
         JSON.stringify({ ...response.data })
       );
-      setErrors({ password: '', email: '' });
+      setErrors({ email: '', password: '' });
       props.history.push('/secret');
     } catch (err) {
       console.error(err.response);
@@ -96,7 +100,7 @@ function Login(props) {
 
         <div>
           <label htmlFor='signupFormEmail'>E-mail Address</label>
-          <Input
+          <TextInput
             type='email'
             name='email'
             id='signupFormEmail'
@@ -108,7 +112,7 @@ function Login(props) {
 
         <div>
           <label htmlFor='signupFormPassword'>Password</label>
-          <Input
+          <TextInput
             type='password'
             name='password'
             id='signupFormPassword'
